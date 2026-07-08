@@ -214,19 +214,13 @@ Stores previously generated reports for later review.
 ### Frontend
 
 ```
-https://your-frontend-url
-```
-
-### Backend
-
-```
-https://your-backend-url
+https://alphalens-investment-research-frontend.onrender.com
 ```
 
 ### GitHub Repository
 
 ```
-https://github.com/yourusername/AlphaLens-AI
+https://github.com/rk-ritik-raj/alphalens-investment-research
 ```
 
 ---
