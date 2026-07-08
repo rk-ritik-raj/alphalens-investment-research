@@ -1,645 +1,245 @@
-# 🚀 AlphaLens AI – Multi-Agent Investment Research Platform
+# 🚀 AlphaLens AI — Multi-Agent Investment Research Platform
 
 <p align="center">
-
-AI-Powered • Multi-Agent • LangGraph • OpenRouter • React • Node.js • Financial Intelligence
-
+  <strong>An AI-powered investment research platform built using LangGraph, OpenRouter, React, Node.js, and Finnhub APIs.</strong>
 </p>
 
 <p align="center">
-
-An autonomous investment research platform that simulates how a professional investment team evaluates publicly listed companies using specialized AI agents.
-
+  Autonomous AI agents collaborate to analyze publicly traded companies, evaluate financial health, assess market sentiment, measure investment risk, and generate explainable BUY/PASS recommendations with interactive dashboards and downloadable PDF reports.
 </p>
 
 ---
 
-## 📖 Overview
+## 📌 Project Badges
 
-AlphaLens AI is an AI-powered investment research platform that automates the process of analyzing publicly traded companies. Instead of relying on a single Large Language Model response, the platform decomposes the research process into multiple specialized AI agents coordinated using **LangGraph**.
-
-Each agent is responsible for a specific stage of the investment pipeline—from collecting company information to evaluating financial health, analyzing recent news, assessing investment risks, and finally generating an explainable investment recommendation.
-
-The goal of this project is to demonstrate how modern AI systems can orchestrate multiple specialized agents to solve complex analytical tasks while maintaining modularity, explainability, and scalability.
-
----
-
-## 🎯 Problem Statement
-
-Performing investment research manually requires gathering information from multiple sources including:
-
-- Company fundamentals
-- Financial statements
-- Recent news
-- Market sentiment
-- Risk factors
-- Business overview
-
-This process is both time-consuming and difficult to repeat consistently.
-
-AlphaLens AI automates this workflow by coordinating multiple AI agents that collaborate through a shared state graph to produce a structured investment report.
+![React](https://img.shields.io/badge/Frontend-React%20%2B%20Vite-61DAFB?logo=react)
+![Node.js](https://img.shields.io/badge/Backend-Node.js%20%2B%20Express-339933?logo=node.js)
+![LangGraph](https://img.shields.io/badge/AI-LangGraph-blueviolet)
+![LangChain](https://img.shields.io/badge/Framework-LangChain-0FA958)
+![OpenRouter](https://img.shields.io/badge/LLM-OpenRouter-orange)
+![Finnhub](https://img.shields.io/badge/Data-Finnhub-success)
+![Render](https://img.shields.io/badge/Deployment-Render-46E3B7)
+![Status](https://img.shields.io/badge/Status-Active-success)
 
 ---
 
-## ✨ Key Features
+# 🌐 Live Demo
 
-### 🤖 Multi-Agent Architecture
+### 🖥️ Frontend
+
+https://alphalens-investment-research-frontend.onrender.com 
+
+### 📂 GitHub Repository
+
+https://github.com/rk-ritik-raj/alphalens-investment-research
+
+# 🎥 Demo Video
+
+A complete walkthrough of the project, including the multi-agent workflow, dashboard, report generation, and deployment, is available here:
+
+https://drive.google.com/file/d/1ypdJ8iN9CV8eeWLuNTSyMl-XVLxzqMHe/view?usp=drivesdk
+
+---
+
+# 📖 Project Overview
+
+Investment research often requires analysts to collect information from multiple sources, including company profiles, financial statements, market news, and risk indicators. This process is time-consuming, repetitive, and difficult to scale.
+
+**AlphaLens AI** automates this workflow by orchestrating multiple specialized AI agents through **LangGraph**. Each agent is responsible for a specific stage of the investment research process, allowing the platform to generate structured, explainable, and data-driven investment reports.
+
+The platform combines real-time financial data from **Finnhub**, natural language reasoning using **OpenRouter LLMs**, and a modular multi-agent architecture to deliver comprehensive investment insights through an intuitive web interface.
+
+---
+
+# ✨ Key Features
+
+### 🤖 Multi-Agent AI Workflow
+
 - Research Agent
 - Financial Analysis Agent
-- News Analysis Agent
+- News Sentiment Agent
 - Risk Assessment Agent
 - Decision Synthesis Agent
 
 ---
 
-### 🧠 LangGraph Workflow
+### 📊 Company Analysis
 
-Uses LangGraph's StateGraph orchestration engine to execute AI agents while maintaining a shared immutable state.
-
----
-
-### 📈 Financial Analysis
-
-- Company Profile
-- Market Capitalization
-- Financial Ratios
-- Revenue Metrics
-- Profitability Analysis
+- Company profile generation
+- Business overview
+- Industry classification
+- Financial health evaluation
+- Revenue and valuation metrics
+- Market sentiment analysis
+- Investment risk scoring
+- Explainable BUY/PASS recommendation
 
 ---
 
-### 📰 News Intelligence
+### 📈 Interactive Dashboard
 
-- Latest Company News
-- News Summarization
-- Sentiment Analysis
-- Market Impact Detection
-
----
-
-### ⚠️ Risk Assessment
-
-Evaluates multiple investment risk dimensions including:
-
-- Business Risk
-- Financial Risk
-- Market Risk
-- Technology Risk
-- Competitive Risk
-- Regulatory Risk
-
----
-
-### 📊 Interactive Dashboard
-
-Modern SaaS dashboard including
-
-- Recommendation Card
-- Confidence Score
-- Risk Radar Chart
-- News Sentiment Graph
-- Financial Metrics
-- Investment Summary
-- Pros & Cons
-- PDF Export
+- Professional analytics dashboard
+- Financial metrics visualization
+- Risk analysis panels
+- News sentiment summaries
+- AI-generated investment recommendations
+- Confidence scoring
 
 ---
 
 ### 📄 PDF Report Generation
 
-Generate professional investment reports for every completed analysis.
+Generate downloadable investment research reports containing:
 
----
-
-### 🗂 Research History
-
-Stores previously generated reports for later review.
+- Company overview
+- Financial analysis
+- News analysis
+- Risk assessment
+- Final recommendation
+- Executive investment summary
 
 ---
 
 ### ⚡ Performance Optimizations
 
-- LangGraph Parallel Execution
-- Company Resolution Cache
-- HTTP Request Caching
-- Prompt Size Optimization
-- Token Optimization
-- Retry Mechanism
-- OpenRouter Model Fallback
-- Structured Logging
+- LangGraph-based workflow orchestration
+- Parallel agent execution
+- Company resolution caching
+- AI provider fallback strategy
+- Optimized API payloads
+- Structured logging
+- Retry with exponential backoff
 
 ---
 
-## 🛠 Technology Stack
+### 🛡️ Robust Error Handling
 
-### Frontend
+The platform gracefully handles:
 
-- React.js
-- Vite
-- Tailwind CSS
-- React Router
-- Axios
-- Recharts
-- Lucide Icons
+- Invalid company names
+- API failures
+- Network interruptions
+- AI provider rate limits
+- Missing financial metrics
+- Empty news responses
 
----
-
-### Backend
-
-- Node.js
-- Express.js
-- LangGraph.js
-- OpenRouter API
-- Finnhub API
-- PDFKit
+without breaking the overall workflow.
 
 ---
 
-### AI Technologies
+# 🎯 Project Highlights
 
-- Multi-Agent Architecture
-- LangGraph StateGraph
-- Prompt Engineering
-- Structured JSON Outputs
-- LLM Orchestration
-
----
-
-### Development Tools
-
-- Git
-- GitHub
-- Postman
-- VS Code
-- Nodemon
+- ✅ Autonomous Multi-Agent AI Architecture
+- ✅ LangGraph State-Based Orchestration
+- ✅ Provider-Agnostic AI Service Layer
+- ✅ OpenRouter Integration
+- ✅ Finnhub Financial APIs
+- ✅ Interactive Analytics Dashboard
+- ✅ PDF Report Generation
+- ✅ Company History Tracking
+- ✅ Professional Full-Stack Architecture
+- ✅ Fully Deployed on Render
 
 ---
 
-## 📷 Screenshots
+# 🖼️ Application Preview
 
-> Replace the placeholders below with screenshots before submission.
+> **Screenshots will be added here**
 
-### 🏠 Home Page
-
-![Home](docs/screenshots/home.png)
-
----
-
-### 🔄 Multi-Agent Execution
-
-![Loading](docs/screenshots/loading.png)
+- 🏠 Home Page
+- 🔄 Multi-Agent Processing
+- 📊 Dashboard
+- 📄 Report Details
+- 📜 Report History
+- 📥 PDF Export
 
 ---
 
-### 📊 Dashboard
-
-![Dashboard](docs/screenshots/dashboard.png)
-
----
-
-### 📄 Investment Report
-
-![Report](docs/screenshots/report.png)
-
----
-
-### 📚 Research History
-
-![History](docs/screenshots/history.png)
-
----
-
-## 🌐 Live Demo
-
-### Frontend
-
-```
-https://alphalens-investment-research-frontend.onrender.com
-```
-
-### GitHub Repository
-
-```
-https://github.com/rk-ritik-raj/alphalens-investment-research
-```
-
----
-
-## 🎥 Demo Video
-
-> Add your walkthrough video link here.
-
-```
-https://your-demo-video-link
-```
-
----
-
-## 📌 Project Highlights
-
-✔ Multi-Agent Investment Research
-
-✔ LangGraph State Machine
-
-✔ OpenRouter LLM Integration
-
-✔ Finnhub Financial APIs
-
-✔ Explainable AI Decisions
-
-✔ Professional Dashboard
-
-✔ PDF Report Generation
-
-✔ Research History
-
-✔ Modular Architecture
-
-✔ Provider-Agnostic AI Layer
-
-✔ Interview-Ready Engineering Design
-
----
 
 # 🏗️ System Architecture
 
-AlphaLens AI follows a modular, multi-agent architecture where each AI agent performs a specialized task within the investment research pipeline. The workflow is orchestrated using **LangGraph's StateGraph**, enabling structured execution, shared state management, and scalable agent coordination.
+AlphaLens AI follows a modular **Multi-Agent Architecture** powered by **LangGraph**. Each AI agent is responsible for a specific stage of the investment research process and communicates through a shared state. This design improves modularity, scalability, and maintainability while producing explainable investment recommendations.
 
-Unlike traditional chatbot architectures that rely on a single LLM call, AlphaLens AI decomposes the investment analysis process into multiple independent reasoning stages.
-
----
-
-# 🧠 High-Level Architecture
-
-```text
-                    +----------------------+
-                    |      React UI        |
-                    |  Search Company      |
-                    +----------+-----------+
-                               |
-                               |
-                               ▼
-                    +----------------------+
-                    | Express REST API     |
-                    +----------+-----------+
-                               |
-                               ▼
-                  research.controller.js
-                               |
-                               ▼
-                  runInvestmentWorkflow()
-                               |
-                               ▼
-                LangGraph StateGraph Engine
-                               |
-      ┌────────────────────────┼────────────────────────┐
-      │                        │                        │
-      ▼                        ▼                        ▼
- Research Agent         Financial Agent         News Agent
-      │                        │                        │
-      └───────────────┬────────┴───────────────┘
-                      ▼
-               Risk Assessment Agent
-                      │
-                      ▼
-             Decision Synthesis Agent
-                      │
-                      ▼
-          Final Investment Recommendation
-                      │
-                      ▼
-        Dashboard + PDF + History Database
-```
+The workflow begins with resolving the company, followed by financial and news analysis. Risk assessment is then performed using the collected insights, and finally a decision agent generates an explainable **BUY** or **PASS** recommendation.
 
 ---
 
-# 🔄 LangGraph Workflow
-
-The application uses **LangGraph** to coordinate multiple AI agents through a shared immutable state.
+## 🧠 LangGraph Workflow
 
 ```mermaid
 graph TD
+    START((Start))
 
-START((START))
+    START --> Research[Research Agent]
 
-START --> Research
+    Research --> Financial[Financial Agent]
+    Research --> News[News Agent]
 
-Research --> Financial
+    Financial --> Risk[Risk Assessment Agent]
+    News --> Risk
 
-Research --> News
+    Risk --> Decision[Decision Agent]
 
-Financial --> Risk
-
-News --> Risk
-
-Risk --> Decision
-
-Decision --> END((END))
+    Decision --> END((End))
 ```
 
 ### Workflow Explanation
 
-### Step 1 — Research Agent
+### 🔍 Research Agent
 
-Responsible for:
-
-- Resolving company name
-- Resolving ticker symbol
-- Fetching company profile
-- Understanding business model
-- Identifying strengths
-- Identifying weaknesses
-
-Output:
-
-```text
-companyProfile
-research
-symbol
-```
+- Resolves the company name and stock ticker.
+- Collects company profile information.
+- Generates business overview and industry insights.
 
 ---
 
-### Step 2 — Financial Agent
+### 📊 Financial Agent
 
-Responsible for:
-
-- Market Cap
-- Revenue
-- Profitability
-- Liquidity
-- Debt
-- Financial Ratios
-- Financial Health
-
-Output
-
-```text
-financialData
-```
+- Retrieves financial metrics using Finnhub APIs.
+- Evaluates valuation ratios, profitability, liquidity, and growth.
+- Produces structured financial analysis.
 
 ---
 
-### Step 3 — News Agent
+### 📰 News Agent
 
-Responsible for
-
-- Latest News
-- News Summaries
-- Sentiment Analysis
-- Positive Events
-- Negative Events
-- Market Impact
-
-Output
-
-```text
-news
-```
+- Fetches recent company news.
+- Performs sentiment analysis.
+- Identifies major business events impacting the company.
 
 ---
 
-### Step 4 — Risk Assessment Agent
+### ⚠️ Risk Assessment Agent
 
-Combines outputs from
-
-- Company Profile
-- Financial Metrics
-- News Analysis
-- Research Summary
-
-Produces
-
-```text
-riskAnalysis
-```
-
-Including
-
-- Competition Risk
-- Technology Risk
-- Financial Risk
-- Market Risk
-- Regulatory Risk
-- Business Risk
+- Combines research, financial, and news outputs.
+- Evaluates business, financial, market, and operational risks.
+- Generates an overall investment risk score.
 
 ---
 
-### Step 5 — Decision Agent
+### ✅ Decision Agent
 
-Consumes every previous result
-
-Produces
-
-```text
-decision
-```
-
-Including
-
-- BUY / PASS Recommendation
-- Confidence Score
-- Investment Summary
-- Pros
-- Cons
-- Final Reasoning
+- Synthesizes all previous agent outputs.
+- Generates the final investment recommendation.
+- Produces confidence score, reasoning, advantages, disadvantages, and investment summary.
 
 ---
 
-# 📊 Shared State Flow
-
-Every LangGraph node reads and updates only the portion of state that belongs to it.
-
-```text
-Initial State
-
-{
- company
-}
-
-        │
-        ▼
-
-Research Agent
-
-Reads
-
-company
-
-Writes
-
-symbol
-companyProfile
-research
-
-        │
-        ▼
-
-Financial Agent
-
-Reads
-
-symbol
-
-Writes
-
-financialData
-
-        │
-        ▼
-
-News Agent
-
-Reads
-
-symbol
-
-Writes
-
-news
-
-        │
-        ▼
-
-Risk Agent
-
-Reads
-
-companyProfile
-research
-financialData
-news
-
-Writes
-
-riskAnalysis
-
-        │
-        ▼
-
-Decision Agent
-
-Reads
-
-companyProfile
-research
-financialData
-news
-riskAnalysis
-
-Writes
-
-decision
-
-        │
-        ▼
-
-Final State Returned
-```
-
----
-
-# 📦 Shared State Schema
-
-The StateGraph maintains a centralized state throughout execution.
-
-| State Property | Description |
-|---------------|-------------|
-| company | User input |
-| symbol | Resolved ticker |
-| companyProfile | Company metadata |
-| research | Business overview |
-| financialData | Financial metrics |
-| news | News analysis |
-| riskAnalysis | Risk evaluation |
-| decision | Final recommendation |
-| errors | Collected workflow errors |
-| meta | Execution metadata |
-
----
-
-# 🤖 AI Agents
-
-## 🔍 Research Agent
-
-Responsibilities
-
-- Resolve ticker
-- Understand business model
-- Generate business summary
-- Identify strengths
-- Identify weaknesses
-
-Uses
-
-- Finnhub
-- OpenRouter LLM
-
----
-
-## 📈 Financial Agent
-
-Responsibilities
-
-- Analyze financial metrics
-- Calculate ratios
-- Evaluate profitability
-- Generate financial health summary
-
-Uses
-
-- Finnhub Metrics API
-- OpenRouter LLM
-
----
-
-## 📰 News Agent
-
-Responsibilities
-
-- Retrieve recent company news
-- Summarize articles
-- Perform sentiment analysis
-- Identify market events
-
-Uses
-
-- Finnhub News API
-- OpenRouter LLM
-
----
-
-## ⚠️ Risk Agent
-
-Responsibilities
-
-Evaluate
-
-- Competition
-- Technology
-- Debt
-- Regulation
-- Market
-- Industry
-
-Produces
-
-Composite investment risk profile.
-
----
-
-## 🎯 Decision Agent
-
-Consumes outputs from every previous agent.
-
-Generates
-
-- Recommendation
-- Confidence
-- Investment Summary
-- Pros
-- Cons
-- Final Explanation
+# 💻 Technology Stack
+
+| Category | Technologies |
+|-----------|--------------|
+| Frontend | React, Vite, Tailwind CSS |
+| Backend | Node.js, Express.js |
+| AI Framework | LangChain.js, LangGraph.js |
+| LLM Provider | OpenRouter |
+| Financial Data | Finnhub API |
+| Charts | Recharts |
+| PDF Generation | PDFKit |
+| HTTP Client | Axios |
+| Database | JSON File Storage |
+| Deployment | Render |
+| Version Control | Git & GitHub |
 
 ---
 
@@ -647,130 +247,118 @@ Generates
 
 ```text
 AlphaLens-AI
-
-├── backend
 │
-├── src
-│   ├── agents
-│   ├── config
-│   ├── controllers
-│   ├── graph
-│   ├── prompts
-│   ├── routes
-│   ├── services
-│   ├── state
-│   ├── tools
-│   ├── utils
-│   ├── app.js
-│   └── server.js
+├── backend
+│   ├── data
+│   │   └── reports.json
+│   │
+│   ├── src
+│   │   ├── agents
+│   │   ├── config
+│   │   ├── controllers
+│   │   ├── graph
+│   │   ├── prompts
+│   │   ├── routes
+│   │   ├── services
+│   │   ├── state
+│   │   ├── tools
+│   │   ├── utils
+│   │   ├── app.js
+│   │   └── server.js
+│   │
+│   └── tests
+│       ├── integration
+│       └── unit
 │
 ├── frontend
+│   ├── public
+│   └── src
+│       ├── components
+│       ├── pages
+│       ├── services
+│       ├── App.jsx
+│       └── main.jsx
 │
-├── src
-│   ├── components
-│   ├── pages
-│   ├── services
-│   ├── App.jsx
-│   └── main.jsx
-│
-└── README.md
+├── README.md
+└── package.json
 ```
 
 ---
 
-# 🏛️ Architectural Decisions
+# ⚙️ Why This Architecture?
 
-## Why LangGraph?
+### ✔ Multi-Agent Design
 
-Instead of chaining multiple async functions together, LangGraph provides a structured execution engine with shared state management. This makes the workflow easier to extend, debug, and maintain as additional AI agents are introduced.
+Instead of relying on a single AI prompt, AlphaLens AI divides the workflow into specialized agents. Each agent focuses on a specific responsibility, resulting in better modularity, easier debugging, and improved reasoning quality.
 
----
+### ✔ LangGraph Orchestration
 
-## Why Multi-Agent Architecture?
+LangGraph manages the execution flow using a shared state, allowing each agent to read and update information without tightly coupling components. This makes the workflow easier to extend and maintain.
 
-Investment research naturally consists of distinct tasks such as company profiling, financial analysis, news interpretation, risk evaluation, and decision making. Splitting these responsibilities across specialized agents results in clearer prompts, modular logic, and better maintainability.
+### ✔ Provider-Agnostic AI Layer
 
----
+All Large Language Model interactions are centralized through **AIService**, allowing the application to switch between providers such as OpenRouter, Gemini, or OpenAI with minimal code changes.
 
-## Why AIService?
+### ✔ Modular Backend
 
-The AIService layer abstracts all communication with external LLM providers. Agents remain provider-independent and interact only through a common interface. This design allows switching between OpenRouter, Gemini, OpenAI, or other providers with minimal changes to the application.
+The backend separates controllers, tools, services, utilities, prompts, and agents into dedicated modules, making the codebase clean, scalable, and easier to test.
 
----
+### ✔ Scalable Design
 
-## Why Shared State?
-
-Rather than passing dozens of parameters between agents, a centralized state object enables each node to read only the information it requires and update only the fields it owns. This improves scalability and reduces coupling between components.
+The architecture supports adding new AI agents (for example, ESG Analysis, Portfolio Optimization, or Technical Analysis) without modifying the existing workflow.
 
 ---
+
 
 # ⚙️ Installation & Setup
 
-This project consists of two independent applications:
-
-- **Frontend** → React + Vite + Tailwind CSS
-- **Backend** → Node.js + Express + LangGraph
-
-Both applications must be running simultaneously.
+Follow these steps to run AlphaLens AI locally.
 
 ---
 
-# 📋 Prerequisites
+## 📋 Prerequisites
 
-Before running the project, ensure the following are installed:
+Make sure the following software is installed on your system:
 
-| Software | Version |
-|----------|----------|
-| Node.js | 18+ |
-| npm | Latest |
-| Git | Latest |
-
----
-
-# 🔑 API Keys Required
-
-The platform integrates with external AI and financial data providers.
-
-| Provider | Purpose |
-|----------|----------|
-| OpenRouter | LLM Inference |
-| Finnhub | Financial Data & Company News |
+- Node.js (v18 or higher)
+- npm (comes with Node.js)
+- Git
+- OpenRouter API Key
+- Finnhub API Key
 
 ---
 
-# 📂 Clone Repository
+## 📥 Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/AlphaLens-AI.git
+git clone https://github.com/rk-ritik-raj/alphalens-investment-research.git
 
-cd AlphaLens-AI
+cd alphalens-investment-research
 ```
 
 ---
 
-# 📦 Backend Installation
+## 📦 Install Backend Dependencies
 
 ```bash
 cd backend
-
 npm install
 ```
 
 ---
 
-# 📦 Frontend Installation
+## 📦 Install Frontend Dependencies
 
 ```bash
 cd ../frontend
-
 npm install
 ```
 
 ---
 
-# 🔐 Environment Variables
+# 🔑 Environment Variables
 
-Create a `.env` file inside the backend folder.
+Create a `.env` file inside the **backend** directory.
 
 ```env
 PORT=5000
@@ -782,1098 +370,244 @@ OPENROUTER_MODEL=deepseek/deepseek-chat-v3-0324:free
 FINNHUB_API_KEY=your_finnhub_api_key
 ```
 
+### Environment Variables Explained
+
+| Variable | Description |
+|-----------|-------------|
+| `PORT` | Backend server port |
+| `OPENROUTER_API_KEY` | API key for OpenRouter LLM access |
+| `OPENROUTER_MODEL` | Default OpenRouter model used for AI reasoning |
+| `FINNHUB_API_KEY` | API key for retrieving financial market data |
+
 ---
 
-# 🚀 Running the Backend
+## ▶️ Start the Backend Server
 
 ```bash
 cd backend
-
 npm run dev
 ```
 
-Expected output
-
-```text
-🚀 Server running on http://localhost:5000
-```
-
----
-
-# 🚀 Running the Frontend
-
-```bash
-cd frontend
-
-npm run dev
-```
-
-Expected output
-
-```text
-VITE v7.x
-
-Local:
-
-http://localhost:5173
-```
-
-Open
+The backend will start at:
 
 ```
-http://localhost:5173
-```
-
----
-
-# 🧪 Project Workflow
-
-1. User enters company name
-
-↓
-
-2. Backend resolves ticker
-
-↓
-
-3. Company profile retrieved
-
-↓
-
-4. LangGraph starts execution
-
-↓
-
-5. Research Agent executes
-
-↓
-
-6. Financial Agent executes
-
-↓
-
-7. News Agent executes
-
-↓
-
-8. Risk Agent executes
-
-↓
-
-9. Decision Agent executes
-
-↓
-
-10. Dashboard generated
-
-↓
-
-11. PDF Report generated
-
-↓
-
-12. Report saved into history
-
----
-
-# 🌍 REST API Endpoints
-
-## Research Company
-
-POST
-
-```http
-/api/research
-```
-
-### Request
-
-```json
-{
-    "company":"Apple"
-}
-```
-
-### Success Response
-
-```json
-{
-    "success":true,
-    "data":{
-        "id":"65ab92391",
-        "company":"Apple",
-        "recommendation":"BUY",
-        "confidence":84
-    }
-}
-```
-
----
-
-## Get Research History
-
-GET
-
-```http
-/api/history
-```
-
-Response
-
-```json
-[
-   {
-      "id":"1",
-      "company":"Apple"
-   },
-   {
-      "id":"2",
-      "company":"Tesla"
-   }
-]
-```
-
----
-
-## Get Report
-
-GET
-
-```http
-/api/report/:id
-```
-
-Example
-
-```http
-/api/report/12345
-```
-
----
-
-## Download PDF
-
-GET
-
-```http
-/api/report/:id/pdf
-```
-
-Returns
-
-```
-application/pdf
-```
-
----
-
-# 📄 Generated Report
-
-Each report contains
-
-- Company Profile
-- Business Summary
-- Financial Analysis
-- News Analysis
-- Risk Assessment
-- Recommendation
-- Confidence Score
-- Pros
-- Cons
-- Investment Summary
-
----
-
-# 🧪 Testing Strategy
-
-The project contains two categories of tests.
-
-## Unit Tests
-
-Purpose
-
-Verify business logic without depending on external APIs.
-
-Run
-
-```bash
-node tests/unit/testAllCompanies.mock.js
-```
-
-Tests
-
-- Company Resolver
-- AIService
-- PDF Generator
-- Database
-- LangGraph State Updates
-
----
-
-## Integration Tests
-
-Purpose
-
-Validate the complete system using live APIs.
-
-Run
-
-```bash
-node tests/integration/testAllCompanies.real.js
-```
-
-Tests
-
-- OpenRouter
-- Finnhub
-- LangGraph
-- Dashboard Pipeline
-- PDF Generation
-
----
-
-# 📊 Example Companies
-
-The following companies have been verified during development.
-
-- Apple
-- Microsoft
-- NVIDIA
-- Tesla
-- Amazon
-- Meta
-- Google
-- Netflix
-- Adobe
-- Oracle
-- Infosys
-- Reliance
-- Toyota
-- Samsung
-- TCS
-
----
-
-# 🌐 Deployment
-
-The application can be deployed using:
-
-## Frontend
-
-- Vercel
-- Netlify
-
----
-
-## Backend
-
-- Render
-- Railway
-
----
-
-## Database
-
-Current
-
-```
-JSON Flat File
-```
-
-Production Recommendation
-
-```
-PostgreSQL
-
-or
-
-MongoDB
-```
-
----
-
-# 📈 Performance Notes
-
-The application includes several optimizations.
-
-✔ Parallel LangGraph Execution
-
-✔ Prompt Size Reduction
-
-✔ Company Resolution Cache
-
-✔ HTTP Request Retry
-
-✔ AI Provider Fallback
-
-✔ JSON Validation
-
-✔ Structured Logging
-
-✔ Request Timing
-
----
-
-# ⚠ Known Limitations
-
-The current version uses free-tier APIs.
-
-Possible limitations include
-
-- OpenRouter queue delays
-- Finnhub free-tier restrictions
-- Rate limits
-- Flat-file database
-- No user authentication
-
-These limitations do not affect the overall architecture and can be addressed by upgrading providers or infrastructure.
-
----
-
-# 💡 Troubleshooting
-
-## 401 Unauthorized
-
-Check
-
-```
-OPENROUTER_API_KEY
-```
-
----
-
-## 429 Rate Limit
-
-The selected OpenRouter model is busy.
-
-Try another free model or wait a few minutes.
-
----
-
-## Finnhub 403
-
-The requested ticker is not available on the Finnhub free tier.
-
-The application falls back gracefully whenever possible.
-
----
-
-## Frontend cannot connect
-
-Ensure
-
-```
-Backend running
-
-↓
-
 http://localhost:5000
 ```
 
-and
+---
+
+## ▶️ Start the Frontend
+
+Open another terminal:
+
+```bash
+cd frontend
+npm run dev
+```
+
+The frontend will start at:
 
 ```
-Frontend running
-
-↓
-
 http://localhost:5173
 ```
 
 ---
 
-# ✅ Verification Checklist
+## 🌍 Production Deployment
 
-Before submission verify
+The project is deployed on **Render**.
 
-- [ ] Search works
-- [ ] Dashboard loads
-- [ ] Charts render
-- [ ] PDF downloads
-- [ ] History saves
-- [ ] README complete
-- [ ] Screenshots added
-- [ ] Demo video recorded
-- [ ] GitHub repository public
+### Frontend
 
-# 🧠 Engineering Decisions & Design Rationale
+https://alphalens-investment-research-frontend.onrender.com
 
-This project was designed with a strong emphasis on modularity, maintainability, scalability, and explainability. Rather than building a traditional AI chatbot, AlphaLens AI follows a structured multi-agent architecture where each component has a single responsibility.
 
 ---
 
-# 🏛 Why Multi-Agent Architecture?
+# 🔌 REST API Endpoints
 
-Investment research is naturally composed of multiple independent tasks:
+The backend exposes REST APIs for company research, report retrieval, and PDF generation.
 
-- Understanding the business
-- Analyzing financial performance
-- Reviewing recent news
-- Assessing investment risks
-- Producing a final investment recommendation
-
-Instead of asking one Large Language Model to perform every task simultaneously, AlphaLens AI decomposes the workflow into specialized AI agents.
-
-Benefits:
-
-- Better prompt quality
-- Better separation of responsibilities
-- Easier debugging
-- Easier prompt engineering
-- Independent improvements to each agent
-- More explainable outputs
+| Method | Endpoint | Description |
+|----------|-----------------------------|------------------------------------------|
+| POST | `/api/research` | Generate a complete investment research report |
+| GET | `/api/history` | Retrieve previously generated reports |
+| GET | `/api/report/:id` | Fetch a specific investment report |
+| GET | `/api/report/:id/pdf` | Download the investment report as a PDF |
 
 ---
 
-# 🔄 Why LangGraph?
+## Example Request
 
-A traditional sequential workflow would require manually passing data between functions.
+### POST `/api/research`
 
-As the system grows, this quickly becomes difficult to maintain.
-
-LangGraph provides:
-
-- Shared immutable state
-- Structured execution
-- Node orchestration
-- Execution tracing
-- Parallel execution
-- Easy workflow expansion
-
-Every AI agent only reads the state it requires and updates the fields it owns.
-
-This significantly reduces coupling between modules.
-
----
-
-# 🤖 Why AIService?
-
-Instead of calling OpenRouter directly inside every agent, the project introduces a centralized AIService.
-
-Responsibilities:
-
-- Provider abstraction
-- Retry handling
-- Timeout management
-- Model fallback
-- JSON validation
-- Request logging
-
-The agents never communicate directly with an LLM provider.
-
-Instead, every request flows through:
-
+```http
+POST /api/research
+Content-Type: application/json
 ```
 
-ResearchAgent
-↓
+Request Body
 
-AIService.generate()
-
-↓
-
-OpenRouter
-
-↓
-
-Selected LLM
-
-```
-
-This architecture allows changing providers without modifying business logic.
-
-For example:
-
-OpenRouter
-
-↓
-
-OpenAI
-
-↓
-
-Claude
-
-↓
-
-Gemini
-
-↓
-
-Groq
-
-Only AIService requires modification.
-
----
-
-# 🌐 Why OpenRouter?
-
-Initially the project used Google's Gemini API.
-
-During development the free-tier request quota became a limiting factor.
-
-OpenRouter was selected because it offers
-
-- Multiple providers
-- Multiple free models
-- Unified REST API
-- Easy provider switching
-- Better scalability
-
-The application now supports provider abstraction through AIService.
-
----
-
-# 📈 Why Finnhub?
-
-Investment recommendations require reliable financial data.
-
-Finnhub provides
-
-- Company Profiles
-- Financial Metrics
-- Company News
-- Market Information
-
-The platform separates
-
-Market Data
-
-↓
-
-Finnhub
-
-Reasoning
-
-↓
-
-LLM
-
-keeping responsibilities clearly divided.
-
----
-
-# 📊 Shared State Management
-
-Instead of passing dozens of variables between agents, LangGraph maintains a centralized shared state.
-
-Example
-
-```
-
-Initial State
-
+```json
 {
-
-company
-
+  "company": "Apple"
 }
-
-↓
-
-Research Agent
-
-↓
-
-companyProfile
-
-research
-
-symbol
-
-↓
-
-Financial Agent
-
-↓
-
-financialData
-
-↓
-
-News Agent
-
-↓
-
-news
-
-↓
-
-Risk Agent
-
-↓
-
-riskAnalysis
-
-↓
-
-Decision Agent
-
-↓
-
-decision
-
 ```
 
-Every node only modifies its own state fields.
+---
+
+## Example Success Response
+
+```json
+{
+  "success": true,
+  "data": {
+    "id": "6871c53d",
+    "company": "Apple",
+    "symbol": "AAPL",
+    "decision": {
+      "recommendation": "BUY",
+      "confidence": 82
+    }
+  }
+}
+```
+
+---
+
+## Example Error Response
+
+```json
+{
+  "success": false,
+  "message": "Company could not be resolved."
+}
+```
+
+---
+
+# 🔄 Request Lifecycle
+
+The following sequence illustrates how a research request is processed.
+
+```text
+React Frontend
+       │
+       ▼
+Axios API Service
+       │
+       ▼
+Express Route
+       │
+       ▼
+Research Controller
+       │
+       ▼
+LangGraph Workflow
+       │
+       ▼
+Research Agent
+       │
+ ┌─────┴─────┐
+ ▼           ▼
+Financial   News
+   │           │
+   └─────┬─────┘
+         ▼
+Risk Assessment
+         ▼
+Decision Agent
+         ▼
+JSON Report
+         ▼
+PDF Report
+         ▼
+Frontend Dashboard
+```
+
+---
+
+# 📄 Generated Output
+
+For every successful company search, AlphaLens AI automatically generates:
+
+- Company Profile
+- Business Overview
+- Financial Analysis
+- News Sentiment Analysis
+- Risk Assessment
+- Final BUY/PASS Recommendation
+- Confidence Score
+- Executive Investment Summary
+- Downloadable PDF Report
+- Historical Report Record
 
 ---
 
 # ⚡ Performance Optimizations
 
-The project includes multiple optimizations to improve execution time.
+Several optimizations were implemented to improve responsiveness, reliability, and maintainability while working with external AI and financial data providers.
+
+### Implemented Optimizations
+
+- **Parallel LangGraph Execution**
+  - Independent agent nodes execute concurrently where applicable, reducing overall workflow execution time.
+
+- **Company Resolution Cache**
+  - Frequently resolved company names and ticker symbols are cached during a request to eliminate duplicate lookups.
+
+- **Optimized Prompt Payloads**
+  - Financial metrics and news data are filtered before being sent to the LLM, reducing token usage and response latency.
+
+- **OpenRouter Fallback Models**
+  - If the primary model becomes unavailable or rate-limited, the AI service automatically switches to configured fallback models.
+
+- **Retry with Exponential Backoff**
+  - Retryable API failures (429, 5xx, network timeouts) are handled automatically using exponential backoff.
+
+- **Structured Logging**
+  - Each request logs execution metadata including provider, selected model, execution duration, and request identifier.
+
+- **Centralized AI Service**
+  - All LLM communication is managed through a single AIService layer, simplifying maintenance and provider switching.
 
 ---
 
-## Parallel LangGraph Execution
+# 🏛️ Engineering Decisions
 
-Originally
+Several architectural decisions were made to keep the application modular, scalable, and maintainable.
 
-```
-
-Research
-
-↓
-
-Financial
-
-↓
-
-News
-
-↓
-
-Risk
-
-↓
-
-Decision
-
-```
-
-Optimized
-
-```
-
-Research
-
-↓
-
-Financial
-
-↘
-
-Risk
-
-↓
-
-Decision
-
-↗
-
-News
-
-```
-
-Financial and News analysis execute simultaneously.
-
-This reduces overall workflow latency.
+| Decision | Reason |
+|----------|--------|
+| **LangGraph** | Provides structured workflow orchestration with shared state management for multi-agent execution. |
+| **Multi-Agent Architecture** | Separates research, financial analysis, news analysis, risk evaluation, and investment decisions into specialized AI agents. |
+| **Shared State** | Allows agents to collaborate without tightly coupling components, making the workflow easier to extend. |
+| **AIService Abstraction** | Decouples business logic from the LLM provider, enabling migration between OpenRouter, Gemini, or other providers with minimal code changes. |
+| **OpenRouter** | Offers access to multiple LLM providers through a single API, reducing vendor lock-in. |
+| **Finnhub API** | Supplies real-time company profiles, financial metrics, and market news used throughout the workflow. |
+| **Render Deployment** | Provides a simple cloud deployment for both frontend and backend services. |
+| **JSON Storage** | Lightweight local persistence suitable for development and demonstration purposes. |
 
 ---
-
-## Company Resolution Cache
-
-Resolved companies are cached during execution.
-
-Example
-
-```
-
-Apple
-
-↓
-
-Resolve Symbol
-
-↓
-
-AAPL
-
-↓
-
-Cached
-
-```
-
-Subsequent searches avoid repeating expensive resolution logic.
-
-Benefits
-
-- Lower API usage
-- Lower latency
-- Reduced LLM requests
-
----
-
-## Prompt Optimization
-
-Large prompts increase response latency.
-
-Optimizations include
-
-- Reduced news articles
-- Shorter summaries
-- Smaller financial payloads
-- Reduced token counts
-
-These optimizations significantly reduce inference time.
-
----
-
-## HTTP Request Retry
-
-Network requests may fail because of
-
-- Rate limits
-- Temporary outages
-- Gateway errors
-
-The platform automatically retries retryable requests using exponential backoff.
-
-Supported retry codes
-
-- 408
-- 429
-- 500
-- 502
-- 503
-- 504
-
----
-
-## Model Fallback Strategy
-
-If the primary model becomes unavailable,
-
-AIService automatically tries another model.
-
-Example
-
-```
-
-Primary
-
-↓
-
-deepseek/deepseek-chat-v3
-
-↓
-
-Failure
-
-↓
-
-Llama 3.3
-
-↓
-
-Failure
-
-↓
-
-Qwen
-
-↓
-
-Success
-
-```
-
-This improves system resilience.
-
----
-
-## JSON Validation
-
-LLMs occasionally produce malformed JSON.
-
-Every response is validated before reaching the business layer.
-
-If validation fails
-
-↓
-
-Retry
-
-↓
-
-Fallback
-
-↓
-
-Error Handling
-
-This prevents downstream crashes.
-
----
-
-# 🛡 Error Handling Strategy
-
-Errors are handled at multiple layers.
-
----
-
-## Input Validation
-
-Checks
-
-- Empty company names
-- Invalid requests
-- Missing parameters
-
----
-
-## Company Resolution
-
-Detects
-
-- Unknown companies
-- Misspelled names
-- Invalid tickers
-
-Returns
-
-404
-
-instead of crashing.
-
----
-
-## External APIs
-
-Gracefully handles
-
-- Finnhub failures
-- OpenRouter failures
-- Timeouts
-- Rate limits
-
----
-
-## LangGraph Nodes
-
-Every node catches exceptions independently.
-
-Failures are recorded inside
-
-```
-
-errors[]
-
-```
-
-allowing downstream nodes to respond gracefully.
-
----
-
-# 📊 Observability
-
-The application includes structured execution logging.
-
-Captured information includes
-
-- Request ID
-- Selected Model
-- AI Provider
-- Node Execution Time
-- Total Workflow Duration
-- Retry Count
-
-Example
-
-```
-
-Research Agent
-
-2.3 s
-
-Financial Agent
-
-3.1 s
-
-News Agent
-
-4.8 s
-
-Risk Agent
-
-2.0 s
-
-Decision Agent
-
-1.4 s
-
-Total
-
-13.6 s
-
-```
-
-These logs simplify debugging and performance analysis.
-
----
-
-# 🔒 Security Considerations
-
-Sensitive credentials are never hardcoded.
-
-API keys are stored inside
-
-```
-
-.env
-
-```
-
-Configuration includes
-
-- OpenRouter Key
-- Finnhub Key
-- Port Configuration
-
-The repository excludes
-
-```
-
-.env
-
-```
-
-using
-
-```
-
-.gitignore
-
-```
-
----
-
-# 📐 Software Design Principles
-
-The project follows several software engineering principles.
-
-### Single Responsibility Principle
-
-Every agent performs one task.
-
----
-
-### Separation of Concerns
-
-Frontend
-
-↓
-
-Presentation
-
-Backend
-
-↓
-
-Business Logic
-
-AIService
-
-↓
-
-LLM Communication
-
-Finnhub
-
-↓
-
-Financial Data
-
----
-
-### Modularity
-
-Every module can be independently modified or replaced.
-
----
-
-### Scalability
-
-Future AI agents can be added without changing the existing workflow.
-
-Examples
-
-- ESG Analysis Agent
-
-- Technical Analysis Agent
-
-- Portfolio Optimization Agent
-
-- Earnings Call Agent
-
----
-
-# 🎯 Interview Talking Points
-
-If asked why these architectural choices were made:
-
-**Why LangGraph?**
-
-> LangGraph provides structured orchestration, shared state management, and better scalability compared to manually chaining asynchronous functions.
-
----
-
-**Why multiple AI agents?**
-
-> Investment research naturally consists of multiple specialized tasks. Splitting these into dedicated agents improves maintainability, prompt quality, explainability, and debugging.
-
----
-
-**Why AIService?**
-
-> AIService abstracts provider-specific logic away from the business layer, enabling provider switching, centralized retries, timeout management, fallback handling, and consistent JSON validation.
-
----
-
-**Why OpenRouter instead of a single provider?**
-
-> OpenRouter provides access to multiple LLM providers through one API, reducing vendor lock-in and improving resilience by allowing fallback between supported models.
-
----
-
-**Why a shared state instead of passing objects manually?**
-
-> Shared state simplifies data flow, reduces coupling between agents, and makes it easier to extend the workflow without changing existing interfaces.
-
----
-
 
 # 🧪 Testing & Validation
 
-The platform was validated using both automated tests and manual end-to-end verification.
-
----
+The platform was validated through both automated testing and manual end-to-end verification.
 
 ## Unit Testing
 
-Unit tests focus on validating individual modules without relying on external providers.
+Individual modules were tested independently to verify business logic without relying on live external services.
 
 ### Components Tested
 
 - Company Resolver
 - AIService
-- LangGraph State Updates
 - JSON Parser
+- LangGraph State
 - PDF Generator
-- Local Database Utilities
+- Database Utilities
 
-Run
+Run:
 
 ```bash
 node tests/unit/testAllCompanies.mock.js
@@ -1883,31 +617,29 @@ node tests/unit/testAllCompanies.mock.js
 
 ## Integration Testing
 
-Integration tests execute the complete workflow using live APIs.
+Integration tests validate the complete workflow using live APIs.
 
-Run
-
-```bash
-node tests/integration/testAllCompanies.real.js
-```
-
-Verified Components
+### Components Tested
 
 - OpenRouter Connectivity
 - Finnhub APIs
 - LangGraph Workflow
 - Multi-Agent Execution
-- Dashboard Generation
-- PDF Report Generation
+- Report Generation
+- PDF Generation
 - Report Persistence
+
+Run:
+
+```bash
+node tests/integration/testAllCompanies.real.js
+```
 
 ---
 
-## Manual End-to-End Testing
+## Manual End-to-End Validation
 
-The application was manually tested using multiple publicly traded companies.
-
-Examples include
+The complete workflow was manually verified using multiple publicly traded companies, including:
 
 - Apple
 - Microsoft
@@ -1925,282 +657,238 @@ Examples include
 - Samsung
 - Toyota
 
-For each company the following workflow was verified:
+For each company, the following workflow was successfully verified:
 
-✔ Company Resolution
-
-✔ Company Profile
-
-✔ Financial Analysis
-
-✔ News Analysis
-
-✔ Risk Assessment
-
-✔ Final Recommendation
-
-✔ Dashboard Rendering
-
-✔ PDF Generation
-
-✔ History Persistence
+- ✅ Company Resolution
+- ✅ Company Profile Generation
+- ✅ Financial Analysis
+- ✅ News Sentiment Analysis
+- ✅ Risk Assessment
+- ✅ Investment Recommendation
+- ✅ Dashboard Rendering
+- ✅ PDF Report Generation
+- ✅ Report History Storage
 
 ---
 
-# 📈 Example Output
+# 📊 Known Performance Considerations
 
-Example:
+The overall execution time depends on several external factors:
 
-```
-Company
-
-Apple Inc.
-
-Recommendation
-
-BUY
-
-Confidence
-
-82%
-
-Business
-
-Strong global ecosystem with recurring services revenue.
-
-Financial Health
-
-Healthy profitability and cash flow.
-
-News Sentiment
-
-Mostly Positive
-
-Risk Rating
-
-Low
-
-Investment Summary
-
-Long-term fundamentals remain strong with stable growth,
-healthy margins, and strong market positioning.
-```
-
----
-
-# 📊 Performance Summary
-
-Several engineering optimizations were implemented to improve responsiveness.
-
-Implemented Optimizations
-
-- Parallel LangGraph execution
-- Company resolution cache
-- Reduced prompt payload size
-- Optimized financial payloads
-- Reduced news context
-- Retry with exponential backoff
-- AI provider fallback
-- Structured logging
-
-The final response time depends on:
-
-- OpenRouter model queue
+- OpenRouter model availability
+- Selected LLM model
 - Network latency
 - Finnhub API response time
-- Selected AI model
+- External API rate limits
+
+While response times may vary depending on external providers, the platform is designed to remain resilient through caching, retry strategies, provider fallbacks, and structured error handling.
 
 ---
 
-# ⚖️ Engineering Trade-offs
+# 🌍 Deployment
 
-Several engineering decisions intentionally balance simplicity, scalability, and development speed.
+AlphaLens AI is fully deployed on **Render**, allowing the application to be accessed without any local setup.
 
-| Decision | Benefit | Trade-off |
-|----------|---------|----------|
-| JSON File Database | Simple local setup | Not ideal for high concurrency |
-| OpenRouter Free Models | Easy access to multiple LLMs | Variable response latency |
-| Finnhub Free Tier | Rich financial data | API limitations for some tickers |
-| Multi-Agent Design | Better modularity and explainability | More API calls than a single-agent approach |
-| LangGraph State | Structured orchestration | Additional learning curve |
+| Service | Platform | URL |
+|----------|----------|-----|
+| **Frontend** | Render Static Site | https://alphalens-investment-research-frontend.onrender.com |
 
----
 
-# 🚧 Current Limitations
+### Deployment Highlights
 
-The current implementation has a few known limitations.
-
-### Infrastructure
-
-- Local JSON database
-- Single server deployment
-- No authentication
-
----
-
-### External APIs
-
-- Free-tier OpenRouter latency
-- Finnhub rate limits
-- Some international companies expose limited financial data
-
----
-
-### Functional
-
-- Single company analysis
-- No portfolio tracking
-- No real-time market updates
-- No user accounts
-
-These limitations do not affect the overall architecture and can be addressed in future versions.
-
----
-
-# 🚀 Future Improvements
-
-Potential future enhancements include:
-
-### Platform Features
-
-- User Authentication
-- Portfolio Watchlists
-- Multi-company Comparison
-- Stock Alerts
-- Earnings Calendar
-- Portfolio Risk Analysis
-
----
-
-### AI Features
-
-- Technical Analysis Agent
-- ESG Analysis Agent
-- Earnings Call Agent
-- Portfolio Recommendation Agent
-- Vector Memory (RAG)
-- Long-term Conversation Memory
-
----
-
-### Infrastructure
-
-- PostgreSQL
-- Redis Cache
-- Docker Deployment
-- CI/CD Pipeline
-- Kubernetes
-- Background Job Queue
-
----
-
-### Data Sources
-
-- Tavily Search
-- Alpha Vantage
-- Yahoo Finance
-- Polygon.io
-- SEC Filings
+- Fully cloud-hosted using **Render**
+- Frontend and backend deployed as independent services
+- Environment variables securely configured through Render
+- Frontend communicates with the deployed backend using REST APIs
+- Supports downloadable PDF reports and report history in the deployed environment
 
 ---
 
 # 🤖 AI-Assisted Development Journey
 
-This project was developed with assistance from Large Language Models as part of an AI-assisted software engineering workflow.
+This project was developed using an **AI-assisted software engineering workflow**, combining manual development with AI tools throughout the implementation process.
 
 AI assistance was used for:
 
-- Initial architecture planning
+- System architecture planning
 - LangGraph workflow design
 - Prompt engineering
-- State management
-- Error debugging
+- Multi-agent orchestration
 - API integration
+- Error debugging
 - Performance optimization
 - Documentation refinement
 
-Throughout development, every AI-generated suggestion was reviewed, integrated, tested, and modified where necessary before becoming part of the final implementation.
+Every AI-generated suggestion was **carefully reviewed, tested, modified where necessary, and integrated manually** before becoming part of the final implementation.
 
-The final architecture, project structure, testing strategy, and implementation decisions were verified through manual coding, debugging, and iterative refinement.
+This approach accelerated development while ensuring that the final architecture, implementation, and engineering decisions remained fully understood and validated.
+
+> **Note:** The AI conversation transcripts used during development are included separately as part of the assignment submission, in accordance with the project requirements.
+
+---
+
+# 🚀 Future Improvements
+
+Although the current platform is fully functional, several enhancements can further improve its capabilities.
+
+## Platform Features
+
+- User Authentication & Authorization
+- Portfolio Watchlists
+- Multi-Company Comparison
+- Stock Alerts & Notifications
+- Portfolio Risk Dashboard
+- Earnings Calendar Integration
+
+---
+
+## AI Enhancements
+
+- Technical Analysis Agent
+- ESG Analysis Agent
+- Earnings Call Analysis Agent
+- Portfolio Recommendation Agent
+- Retrieval-Augmented Generation (RAG)
+- Long-Term Conversational Memory
+
+---
+
+## Infrastructure Improvements
+
+- PostgreSQL Database
+- Redis Caching
+- Docker Containerization
+- CI/CD Pipeline
+- Kubernetes Deployment
+- Background Job Queue
+
+---
+
+## Additional Data Sources
+
+- Tavily Search API
+- Alpha Vantage
+- Yahoo Finance
+- Polygon.io
+- SEC Filings
+- Additional Financial News Providers
 
 ---
 
 # 💡 Key Learnings
 
-Building AlphaLens AI provided practical experience with:
+Developing AlphaLens AI provided hands-on experience with:
 
 - Multi-Agent AI Systems
-- LangGraph
+- LangGraph Workflow Orchestration
+- LangChain
 - Prompt Engineering
-- AI Orchestration
-- REST APIs
-- OpenRouter
+- OpenRouter API Integration
 - Financial Data APIs
+- REST API Development
 - State Management
-- Error Handling
 - Performance Optimization
+- Error Handling & Resilience
+- Full-Stack Application Development
+- Cloud Deployment using Render
+
+---
+
+# 🏆 Project Outcome
+
+AlphaLens AI demonstrates how multiple specialized AI agents can collaborate to automate complex investment research workflows.
+
+The project combines modern web technologies, Large Language Models, financial market APIs, and state-based orchestration to deliver structured, explainable investment analysis through a responsive full-stack application.
+
+This project also showcases practical experience in:
+
+- Full-Stack Development
+- AI Integration
+- Multi-Agent System Design
+- LangGraph Orchestration
 - Software Architecture
-- Technical Documentation
+- API Integration
+- Cloud Deployment
+- Production-Oriented Engineering Practices
 
 ---
 
-# 🎯 Interview Talking Points
+# 💬 AI Development Logs
 
-If presenting this project during interviews, the following topics can be discussed:
+This project was developed using an AI-assisted software engineering workflow.
 
-- Why Multi-Agent AI instead of a single LLM
-- LangGraph workflow orchestration
-- Shared state management
-- Provider abstraction using AIService
-- Prompt engineering strategy
-- Financial data processing
-- Error handling and resilience
-- Caching strategy
-- Performance optimization
-- Trade-offs between simplicity and scalability
+As requested in the assignment, the complete AI conversation transcripts used during planning, implementation, debugging, optimization, and documentation are included separately with the project submission.
+
+These conversations demonstrate the complete engineering process followed during development.
 
 ---
 
-# 📚 References
+# 🤝 Contributing
 
-- LangGraph Documentation
-- LangChain Documentation
-- OpenRouter API Documentation
-- Finnhub API Documentation
-- React Documentation
-- Express.js Documentation
-- Tailwind CSS Documentation
+Contributions, suggestions, and improvements are always welcome.
 
----
+If you find any issues or have ideas for improvements:
 
-# 🙌 Acknowledgements
-
-This project combines modern web development with AI orchestration concepts and demonstrates how multiple specialized AI agents can collaborate to automate complex investment research tasks.
+1. Fork the repository
+2. Create a new branch
+3. Commit your changes
+4. Open a Pull Request
 
 ---
 
 # 👨‍💻 Author
 
-**Ritik Kumar**
+## Ritik Kumar
 
-B.Tech Computer Science Engineering
+**B.Tech – Computer Science & Engineering**
 
 Lovely Professional University
 
-GitHub:
-```
-https://github.com/rk-ritik-raj
-```
+### Connect with me
 
-LinkedIn:
-```
-https://www.linkedin.com/in/your-linkedin-profile
-```
+**GitHub**
+
+https://github.com/rk-ritik-raj
+
+**LinkedIn**
+
+https://www.linkedin.com/in/rk-ritik/
+
+**Email**
+
+rk4768747@gmail.com
+
+---
+
+# ⭐ If You Like This Project
+
+If you found this project useful, consider giving it a ⭐ on GitHub.
+
+It helps others discover the project and motivates further development.
 
 ---
 
 # 📜 License
 
-This project was developed for educational purposes as part of the **InsideIIM × AltUni AI Labs Full Stack AI Engineering Internship Assignment**.
+This project was developed for educational purposes as part of the **InsideIIM × AltUni AI Labs – Full Stack AI Engineering Internship Assignment**.
 
-It may also serve as a portfolio project demonstrating modern AI-assisted software engineering, multi-agent orchestration, and full-stack development practices.
+It is intended to demonstrate:
+
+- Full-Stack Development
+- Multi-Agent AI Systems
+- LangGraph Workflow Orchestration
+- LLM Integration
+- AI-Assisted Software Engineering
+- Production-Oriented System Design
+
+The project may also serve as a portfolio project showcasing modern AI-powered application development.
+
+---
+
+<p align="center">
+
+### 🚀 Built with ❤️ using React, Node.js, LangGraph, OpenRouter, and Finnhub
+
+**Thank you for visiting AlphaLens AI!**
+
+</p>
